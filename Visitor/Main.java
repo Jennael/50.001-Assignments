@@ -27,10 +27,6 @@ class Chicken {
     // does not implement visitable --static checking
 }
 
-
-
-
-
 class Book implements Visitable {
     private double weight;
 
@@ -66,7 +62,7 @@ class CD implements Visitable {
 }
 
 
-class Clothibng implements Visitable{
+class Clothing implements Visitable{
     private double size;
 
     public void accept(Visitor v){
@@ -83,4 +79,38 @@ class Clothibng implements Visitable{
 
 }
 
+/*
+NOTES ON VISITOR DESIGN PATTERN:
+---------------------------------------------------------------------
+public interface Visitor {
+    void visit (Book b);
+    void visit (CD c);
+    void visit (Clothing c);
+}
 
+public interface Visitable {
+    void accept (Visitor v);
+}
+---------------------------------------------------------------------
+
+PostageRegion1 p1 = new PostageRegion1(); --> public class PostageRegion1 implements Visitor which has visit method
+Book b = new Book(); --> public class Book implements Visitable which has accept method
+
+Step 1. main object accepts visitor
+main: 
+    b.accept(p);
+
+Step 2. object has accept method which calls visitor's visit method
+Book: 
+    public void accept (Visitor v){
+        v.visit (this);
+    }
+
+Step 3. visitor's visit method makes changes to object
+PostageRegion1:     
+    public void visit (Book b) {
+        total += b.getWeight()*20;
+    }
+
+
+*/
