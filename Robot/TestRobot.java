@@ -4,17 +4,18 @@ public class TestRobot {
 
     public static void main(String[] args) {
 
-        final int [][] grid0 = {
-                {0,0,0,0},
-                {0,0,1,0},
-                {0,0,0,1},
-                {0,1,0,0}
-        };
+        final int[][] grid6 = {
+            {0,0,0,1},
+            {0,1,0,0},
+            {0,0,1,1},
+            {0,0,0,0},
+            {1,1,0,0},
+            {1,1,0,0}
+    };
+        ArrayList<Point> path = new ArrayList<Point>();
+        boolean success = GetPath.getPath(2, 3, path, grid6);
 
 
-        ArrayList<Point> path = new ArrayList<>();
-
-        boolean success = GetPath.getPath(3,2,path, grid0);
 
         System.out.println(success);
         if (success)

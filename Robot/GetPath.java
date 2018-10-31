@@ -7,10 +7,16 @@ public class GetPath {
     Path if an ArrayList of the form [(0,0), (0,1), (1,1), (2,1), (2,2), (3,2)]. (row, column)
     Grid specify which spots are blocked and which aren't. 
     */
+    
     public static boolean getPath (int r, int c, ArrayList<Point> path, final int [][] grid) {
 
         Point destination = new Point (r,c);
         Point current = new Point (0,0);
+
+        //check blocked (destination))
+        if (grid[r][c] == 1){
+            return false;
+        }
 
         return tryPath(current, destination, path, grid);
 
@@ -28,11 +34,13 @@ public class GetPath {
             path.remove(current);
             return false;
         }
-        //check blocked
+        
+        //check blocked (current grid)
         else if (grid[current.x][current.y]==1){
             path.remove(current);
             return false;
         }
+        
 
         Point right = new Point(current.x, current.y+1);
         Point down = new Point(current.x+1, current.y);
