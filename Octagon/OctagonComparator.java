@@ -2,7 +2,6 @@ import java.util.*;
 
 public class OctagonComparator implements Comparator<Octagon>{ 
 
-
     /*
     implemented Comparator built-in interface
 

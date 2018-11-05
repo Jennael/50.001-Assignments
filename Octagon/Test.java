@@ -6,8 +6,10 @@ public class Test {
         l.add(new Octagon(2));
         l.add(new Octagon(3));
         l.add(new Octagon(1));
+
         Collections.sort(l);
-        for (Octagon o:l)
+        for (Octagon o:l){
             System.out.println(o.getSide());
+        }
     }
 }
