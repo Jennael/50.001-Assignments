@@ -2,6 +2,74 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - H",
+            "request": "launch",
+            "mainClass": "H"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - r",
+            "request": "launch",
+            "mainClass": "r"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Polymorphism",
+            "request": "launch",
+            "mainClass": "Polymorphism"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - submitDataURL",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "submitDataURL",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PreorderDeadline",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "PreorderDeadline",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestFactorial",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "TestFactorial",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestFibonacci",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "TestFibonacci",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fibonacci",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "Fibonacci",
+            "args": ""
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestTemperatureAlert",
             "request": "launch",
             "cwd": "${workspaceFolder}",
